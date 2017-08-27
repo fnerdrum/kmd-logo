@@ -10,5 +10,5 @@
 2. Open [http://localhost:9000/](http://localhost:9000/) in your browser
 
 ## Build
-1. Build: `npm run build`. Files will be in `dist` folder
+1. Build: `npm run build`. Files will be in `docs` folder
  
