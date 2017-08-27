@@ -13,7 +13,7 @@ module.exports = {
     output: {
         filename: '[name]-[hash].min.js',
         path: path.join(__dirname, 'docs'),
-        publicPath: '/'
+        publicPath: '/kmd-logo'
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
