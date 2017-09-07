@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import Logo from './Logo';
 
 const constants = {
-    k: 210,
-    b: 15,
-    ki: 500,
-    krandom: 300000000,
-    fcap: 10000
+    k: 234,
+    b: 18,
+    ki: 389,
+    krandom: 1992700730,
+    fcap: 15036
 };
 
 class App extends React.Component {
