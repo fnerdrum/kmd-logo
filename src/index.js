@@ -10,6 +10,11 @@ const constants = {
     fcap: 15036
 };
 
+const headerStyle = {
+    fontSize: 20,
+    margin: '30px 0 10px',
+};
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -35,16 +40,20 @@ class App extends React.Component {
     render() {
         const { width } = this.state;
         return (
-            <div style={{ padding: 25 }}>
+            <div style={{ padding: '0 25px' }}>
+                <h1 style={headerStyle}>Physical constants</h1>
                 {this.range('k', 'Spring stiffness', 0, 300)}
                 {this.range('b', 'Spring damping', 0, 50)}
                 {this.range('ki', 'Interaction force constant', 0, 100000)}
                 {this.range('krandom', 'Noice', 0, 10000000000)}
                 {this.range('fcap', 'Max force', 0, 200000)}
-                <div style={{ margin: '25px 0' }}>
-                    {['KUNST', 'MUSIKK', 'DESIGN', 'DEFAULT'].map(mode => <button key={mode} style={{ height: 30, width:80 }} onClick={() => this.setState({ mode })}>{mode}</button>)}
-                    <span style={{ marginLeft: 10 }}>Emphasis</span>
+
+                <h1 style={headerStyle}>Emphasize word</h1>
+                <div>
+                    {['KUNST', 'MUSIKK', 'DESIGN', 'DEFAULT'].map(mode => <button key={mode} style={{ height: 30, width: 80 }} onClick={() => this.setState({ mode })}>{mode}</button>)}
                 </div>
+
+                <h1 style={headerStyle}>Logo</h1>
                 <div>
                     <input id="width" type="range" min={100} max={1500} value={width} onChange={(event) => this.setState({width: parseInt(event.target.value)})}/>
                     <label style={{ marginLeft: 10 }} htmlFor="width">Width: {width}px</label>
