@@ -12,7 +12,6 @@ function stepper(x, v, destX, { k, b, others, ki, krandom, fcap } ) {
 
     const sumDistances = sum(others.map(pos => Math.abs(x - pos)));
     const Frandom = (Math.random() - 0.5) * krandom / Math.max(Math.pow(sumDistances, 2), 0.0000000000001);
-    // if (Math.abs(Frandom) < 700) {Frandom = 0; }
 
     const F = Fspring + Fdamper + Finteraction + Frandom;
 
