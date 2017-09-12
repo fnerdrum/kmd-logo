@@ -45,7 +45,7 @@ class App extends React.Component {
                 {this.range('k', 'Spring stiffness', 0, 300)}
                 {this.range('b', 'Spring damping', 0, 50)}
                 {this.range('ki', 'Interaction force constant', 0, 100000)}
-                {this.range('krandom', 'Noice', 0, 10000000000)}
+                {this.range('krandom', 'Noise', 0, 10000000000)}
                 {this.range('fcap', 'Max force', 0, 200000)}
 
                 <h1 style={headerStyle}>Emphasize word</h1>
