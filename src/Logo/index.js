@@ -62,7 +62,7 @@ class Logo extends React.Component {
     }
 
     render() {
-        const style = { ...this.props.style, position: 'relative', display: 'block', backgroundImage: 'none', height: 81, width: this.props.width };
+        const style = { ...this.props.style, position: 'relative', display: 'block', height: 81, width: this.props.width };
         return (
              <a style={style} href={this.props.mainPage} title="Til forsiden">
                  {letters.map((letter, index) => React.createElement(letter, { key: index, style: { position: 'absolute', left: this.state.positions[index] } }))}
